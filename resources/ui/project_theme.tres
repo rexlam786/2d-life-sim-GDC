@@ -1,0 +1,24 @@
+[gd_resource type="Theme" format=3 uid="uid://c12rshckbou14"]
+
+[ext_resource type="StyleBox" uid="uid://kt6b7jndqysu" path="res://resources/ui/button_disabled_stylebox.tres" id="1_hqqn1"]
+[ext_resource type="StyleBox" uid="uid://dkc3adsypqtmo" path="res://resources/ui/button_normal_stylebox.tres" id="2_jdndm"]
+[ext_resource type="StyleBox" uid="uid://et4otvsnc65g" path="res://resources/ui/button_hover_stylebox.tres" id="3_co3xv"]
+[ext_resource type="StyleBox" uid="uid://ca27vqnfho8oh" path="res://resources/ui/button_pressed_stylebox.tres" id="4_1dp07"]
+[ext_resource type="StyleBox" uid="uid://b4cn42ekg4q71" path="res://resources/ui/panel_stylebox.tres" id="5_grs5e"]
+
+[resource]
+Button/colors/font_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+Button/colors/font_disabled_color = Color(0.015686275, 0.015686275, 0.015686275, 1)
+Button/colors/font_focus_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+Button/colors/font_hover_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+Button/colors/font_hover_pressed_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+Button/colors/font_pressed_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+Button/colors/icon_hover_pressed_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+Button/styles/disabled = ExtResource("1_hqqn1")
+Button/styles/focus = ExtResource("2_jdndm")
+Button/styles/hover = ExtResource("3_co3xv")
+Button/styles/normal = ExtResource("2_jdndm")
+Button/styles/pressed = ExtResource("4_1dp07")
+Label/colors/font_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+Panel/styles/panel = ExtResource("5_grs5e")
+PanelContainer/styles/panel = ExtResource("5_grs5e")
