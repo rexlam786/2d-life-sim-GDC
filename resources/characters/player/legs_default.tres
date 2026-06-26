@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" format=3 uid="uid://lpsu348ppvgt"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4q4ws"]
+load_path = "res://.godot/imported/roguelikeChar_transparent.png-115d733f68637c39ad9b4d55e202e706.ctex"
+
+[resource]
+atlas = SubResource("CompressedTexture2D_4q4ws")
+region = Rect2(51, 17, 16, 16)

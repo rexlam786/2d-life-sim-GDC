@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://i27spkrkgwa6"]
+
+[ext_resource type="Script" uid="uid://bolhxiaobir2k" path="res://scripts/player/player.gd" id="1_75vfm"]
+[ext_resource type="Texture2D" uid="uid://c106fg2y16fso" path="res://resources/characters/player/body_default.tres" id="2_0owmy"]
+[ext_resource type="Texture2D" uid="uid://lpsu348ppvgt" path="res://resources/characters/player/legs_default.tres" id="3_qek5x"]
+[ext_resource type="Texture2D" uid="uid://bqbqkcgilotbf" path="res://resources/characters/player/feet_default.tres" id="4_5gtgg"]
+[ext_resource type="Texture2D" uid="uid://77lgphlekgui" path="res://resources/characters/player/torso_default.tres" id="5_h17s1"]
+[ext_resource type="Texture2D" uid="uid://bm6uejswd1nwq" path="res://resources/characters/player/hair_default.tres" id="6_je7p5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fm80t"]
+size = Vector2(14, 15)
+
+[node name="Player" type="CharacterBody2D" unique_id=1798335662]
+script = ExtResource("1_75vfm")
+walk_speed = null
+
+[node name="BodyLayer" type="Sprite2D" parent="." unique_id=1398459133]
+texture = ExtResource("2_0owmy")
+
+[node name="LegsLayer" type="Sprite2D" parent="." unique_id=1051996964]
+z_index = 1
+texture = ExtResource("3_qek5x")
+
+[node name="FeetLayer" type="Sprite2D" parent="." unique_id=1579263588]
+z_index = 2
+texture = ExtResource("4_5gtgg")
+
+[node name="TorsoLayer" type="Sprite2D" parent="." unique_id=951213036]
+z_index = 3
+texture = ExtResource("5_h17s1")
+
+[node name="HairLayer" type="Sprite2D" parent="." unique_id=1073512516]
+z_index = 4
+texture = ExtResource("6_je7p5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=150322210]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_fm80t")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1647217796]
+zoom = Vector2(2, 2)
+process_callback = 0
+position_smoothing_enabled = true
