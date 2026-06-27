@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 GameEvents="*uid://dx5xrd0utdxpi"
+GameClock="*uid://bld4ydh822f6d"
+SaveManager="*uid://bbe8l8wmf4ndw"
 
 [debug]
 

@@ -41,6 +41,6 @@ func _on_game_started() -> void:
 	print("Player: head game_started - I am alive and ready!")
 	
 
-func _input(event: InputEvent) -> void:
+func _input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed("interact"):
 		GameEvents.debug_ping.emit("Hello from Player")

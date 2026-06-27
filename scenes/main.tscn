@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://bm3oc4k3j4cy3"]
 
 [ext_resource type="Script" uid="uid://b1hna5u6yp2oy" path="res://scripts/main.gd" id="1_0wfyh"]
+[ext_resource type="Script" uid="uid://cyq8plnrfv2ol" path="res://scripts/ui/debug_clock.gd" id="2_jyhfs"]
 [ext_resource type="Texture2D" uid="uid://c2tjrc4c2xj8v" path="res://assets/tiles/roguelikeSheet_transparent.png" id="2_sugp2"]
 [ext_resource type="PackedScene" uid="uid://i27spkrkgwa6" path="res://scenes/player/player.tscn" id="3_sugp2"]
 
@@ -1719,6 +1720,16 @@ sources/0 = SubResource("TileSetAtlasSource_jyhfs")
 script = ExtResource("1_0wfyh")
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=511984935]
+
+[node name="DebugClock" type="Label" parent="UI" unique_id=271691062]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 163.0
+offset_bottom = 31.0
+theme_override_font_sizes/font_size = 12
+text = "Spring: Day  1, Year 1 06:00"
+horizontal_alignment = 1
+script = ExtResource("2_jyhfs")
 
 [node name="World" type="Node2D" parent="." unique_id=1261363454]
 

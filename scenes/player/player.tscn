@@ -12,7 +12,6 @@ size = Vector2(14, 15)
 
 [node name="Player" type="CharacterBody2D" unique_id=1798335662]
 script = ExtResource("1_75vfm")
-walk_speed = null
 
 [node name="BodyLayer" type="Sprite2D" parent="." unique_id=1398459133]
 texture = ExtResource("2_0owmy")
