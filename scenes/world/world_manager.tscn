@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bxuex2lrfa8g1"]
+
+[ext_resource type="Texture2D" uid="uid://b63j2ag22p1l3" path="res://icon_small.svg" id="1_igh86"]
+[ext_resource type="Script" uid="uid://ct086np8c5qn7" path="res://scripts/world/world_manager.gd" id="1_m7akf"]
+
+[node name="WorldManager" type="Node2D" unique_id=509289121]
+script = ExtResource("1_m7akf")
+
+[node name="GhostSprite" type="Sprite2D" parent="." unique_id=1844357056]
+modulate = Color(1, 1, 1, 0)
+z_index = 10
+texture = ExtResource("1_igh86")
+
+[node name="PlacedItems" type="Node2D" parent="." unique_id=163836988]

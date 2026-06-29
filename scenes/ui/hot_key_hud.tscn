@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c3n7qjowlqr4k"]
+
+[ext_resource type="Script" uid="uid://g3ffjv1w7ejo" path="res://scripts/ui/hot_key_hud.gd" id="1_rsb15"]
+
+[node name="HotKeyHud" type="Control" unique_id=734039533]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_rsb15")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1406064749]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 25.0
+offset_right = 48.0
+offset_bottom = 65.0
