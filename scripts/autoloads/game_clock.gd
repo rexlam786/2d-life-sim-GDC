@@ -36,6 +36,7 @@ func _ready() -> void:
 	_timer.autostart = true
 	_timer.timeout.connect(_on_timer_timeout)
 	add_child(_timer)
+	add_to_group(SaveManager.SAVEABLE_GROUP)
 	print("GameClock: Ready - ", get_datetime_string())
 
 
@@ -97,9 +98,29 @@ func get_datetime_string() -> String:
 	[get_season_name(), day, year, hour, minute]
 	
 	
+# Saveable Contract
+
+func get_save_id() -> String:
+	return "clock"
 	
+
+func save_data() -> Dictionary:
+	return {
+		"minute": minute,
+		"hour": hour,
+		"day": day,
+		"current_season": current_season,
+		"year": year,
+	}
 	
-	
+
+func load_data(data: Dictionary) -> void:
+	minute = data.get("minute",0)
+	hour = data.get("hour",6)
+	day = data.get("day",1)
+	current_season = data.get("current_season",Season.SPRING)
+	year = data.get("year",1)
+	print("GameClock: Loaded - ",get_datetime_string())	
 	
 	
 	

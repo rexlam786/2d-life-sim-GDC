@@ -79,7 +79,7 @@ func load_game(slot: int = 0) -> void:
 	GameEvents.game_loaded.emit(slot)
 
 ## Migrate a save file from an older version to the current version!
-func _migrate(data: Dictionary, from_version: int) -> void:
+func _migrate(_data: Dictionary, from_version: int) -> void:
 	print("SaveManager: Migrating from v%d to v%d." % [from_version,SAVE_VERSION])
 	# Future: data["new_field"] = default_value
 	pass
