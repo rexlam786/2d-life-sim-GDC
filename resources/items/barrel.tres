@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="FurnitureItem" format=3 uid="uid://bnpjhqjp3i658"]
+
+[ext_resource type="Script" uid="uid://bs0340forr6ux" path="res://scripts/world/furniture_item.gd" id="1_2nt00"]
+[ext_resource type="Texture2D" uid="uid://c2tjrc4c2xj8v" path="res://assets/tiles/roguelikeSheet_transparent.png" id="2_ee4tb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_la1ky"]
+atlas = ExtResource("2_ee4tb")
+region = Rect2(391, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_2nt00")
+id = "barrel"
+label = "Barrel"
+texture = SubResource("AtlasTexture_la1ky")
+metadata/_custom_type_script = "uid://bs0340forr6ux"

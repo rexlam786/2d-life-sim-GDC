@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="FurnitureCatalogData" format=3 uid="uid://b5cen55n0wduu"]
+
+[ext_resource type="Script" uid="uid://bs0340forr6ux" path="res://scripts/world/furniture_item.gd" id="1_jk4mt"]
+[ext_resource type="Script" uid="uid://dkx51mihou4qx" path="res://scripts/world/furniture_catalog_data.gd" id="2_cvfa1"]
+
+[resource]
+script = ExtResource("2_cvfa1")
+metadata/_custom_type_script = "uid://dkx51mihou4qx"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="FurnitureItem" format=3 uid="uid://bkol2g7ytj6ge"]
+
+[ext_resource type="Script" uid="uid://bs0340forr6ux" path="res://scripts/world/furniture_item.gd" id="1_5vrv7"]
+[ext_resource type="Texture2D" uid="uid://c2tjrc4c2xj8v" path="res://assets/tiles/roguelikeSheet_transparent.png" id="2_xidqb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lijap"]
+atlas = ExtResource("2_xidqb")
+region = Rect2(629, 153, 16, 16)
+
+[resource]
+script = ExtResource("1_5vrv7")
+id = "chest_wooden"
+label = "Wooden Chest"
+texture = SubResource("AtlasTexture_lijap")
+metadata/_custom_type_script = "uid://bs0340forr6ux"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="FurnitureItem" format=3 uid="uid://da4uudsthl1ry"]
+
+[ext_resource type="Script" uid="uid://bs0340forr6ux" path="res://scripts/world/furniture_item.gd" id="1_08htf"]
+[ext_resource type="Texture2D" uid="uid://c2tjrc4c2xj8v" path="res://assets/tiles/roguelikeSheet_transparent.png" id="2_4tau5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fk67y"]
+atlas = ExtResource("2_4tau5")
+region = Rect2(255, 51, 16, 16)
+
+[resource]
+script = ExtResource("1_08htf")
+id = "bed"
+label = "Bed"
+texture = SubResource("AtlasTexture_fk67y")
+metadata/_custom_type_script = "uid://bs0340forr6ux"
